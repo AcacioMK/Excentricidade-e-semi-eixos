@@ -1,0 +1,10 @@
+var e = 0; // excentricidade
+var afelio = 152098232; // afelio
+var perielio = 147098290; // perielio
+var dadpMenos = afelio - perielio; // afelio - perielio
+var dadpMais = parseInt(afelio) + parseInt(perielio); // afelio + perielio 
+e = dadpMenos / dadpMais; // 
+var a = dadpMais / 2; // semi eixo maior
+var b = 0; // semi eixo menor
+b = 1 - Math.pow(e, 2); 
+b = a * Math.sqrt(b);
